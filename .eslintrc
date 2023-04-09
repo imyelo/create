@@ -4,7 +4,7 @@
   "parserOptions": {
     "project": ["./tsconfig.json", "./packages/@yelo/*/tsconfig.json"]
   },
-  "ignorePatterns": ["**/@yelo/*/lib/**/*", "**/@yelo/template-*/template/**/*"],
+  "ignorePatterns": ["**/node_modules/*", "**/@yelo/*/lib/**/*", "**/@yelo/template-*/template/**/*"],
   "rules": {
     "no-await-in-loop": "off"
   }

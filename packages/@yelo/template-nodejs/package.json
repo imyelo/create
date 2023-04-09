@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "@yelo/template-template",
-  "version": "0.0.1",
-  "description": "🛖 Template for template",
+  "name": "@yelo/template-nodejs",
+  "version": "0.0.0",
+  "description": "🛖 Template for nodejs",
   "type": "commonjs",
   "files": [
     "saofile.js",
@@ -17,7 +17,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/imyelo/create.git",
-    "directory": "packages/@yelo/template-template"
+    "directory": "packages/@yelo/template-nodejs"
   },
   "author": "yelo <zhihuzeye@gmail.com>",
   "license": "Apache-2.0",

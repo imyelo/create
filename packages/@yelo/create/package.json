@@ -26,6 +26,7 @@
     "url": "https://github.com/imyelo/create.git",
     "directory": "packages/@yelo/create"
   },
+  "author": "yelo <zhihuzeye@gmail.com>",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/imyelo/create/issues"
