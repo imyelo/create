@@ -7,11 +7,6 @@
     "prepare": "husky install",
     "release": "lerna publish"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "prettier": "@yelo/prettier-config",
   "lint-staged": {
     "*.{js,jsx,ts,tsx,json,md,html,css}": [
@@ -19,9 +14,9 @@
     ]
   },
   "devDependencies": {
-    "@yelo/eslint-config": "^0.1.0",
-    "@yelo/prettier-config": "^0.0.1",
-    "@yelo/tsconfig": "^0.2.0",
+    "@yelo/eslint-config": "^0.2.0",
+    "@yelo/prettier-config": "^0.1.0",
+    "@yelo/tsconfig": "^0.3.0",
     "eslint": "^8.37.0",
     "husky": "^8.0.3",
     "lerna": "^6.6.1",
