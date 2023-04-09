@@ -1,0 +1,9 @@
+{
+  "extends": "@yelo/tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "lib/esm",
+    "declarationDir": "lib/types"
+  },
+  "include": ["src"]
+}

@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "name": "@yelo/template-template",
+  "version": "0.0.0",
+  "description": "🛖 Template for template",
+  "type": "commonjs",
+  "files": [
+    "saofile.js",
+    "template"
+  ],
+  "scripts": {
+    "test": "ava"
+  },
+  "engines": {
+    "node": ">= 18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imyelo/create.git",
+    "directory": "packages/@yelo/template-template"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/imyelo/create/issues"
+  },
+  "homepage": "https://github.com/imyelo/create#readme",
+  "ava": {
+    "extensions": {
+      "ts": "commonjs"
+    },
+    "files": [
+      "test/**/*",
+      "!test/helpers/**/*"
+    ]
+  },
+  "devDependencies": {
+    "ava": "^5.2.0",
+    "sao": "^1.7.1"
+  }
+}
