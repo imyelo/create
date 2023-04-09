@@ -7,7 +7,7 @@ import sao from 'sao'
 import { fetch } from './utils/fetch.js'
 import { printChoices } from './utils/print.js'
 
-const TEMPLATE_CHOICES = ['nodejs']
+const TEMPLATE_CHOICES = ['nodejs', 'template']
 const NPM_CLIENT_CHOICES = ['npm', 'yarn', 'pnpm']
 
 const cli = meow(
