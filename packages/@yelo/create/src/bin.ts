@@ -1,16 +1,13 @@
 #!/usr/bin/env node
 
 import assert from 'node:assert'
-import { createRequire } from 'node:module'
 import { resolve } from 'node:path'
 import meow from 'meow'
 import sao from 'sao'
+import { fetch } from './utils/fetch.js'
+import { printChoices } from './utils/print.js'
 
-const require = createRequire(import.meta.url)
-
-const printChoices = (values: string[]) => values.join(' | ')
-
-const TEMPLATE_CHOICES = ['app', 'template']
+const TEMPLATE_CHOICES = ['nodejs']
 const NPM_CLIENT_CHOICES = ['npm', 'yarn', 'pnpm']
 
 const cli = meow(
@@ -45,8 +42,7 @@ assert(!cli.flags.npmClient || NPM_CLIENT_CHOICES.includes(cli.flags.npmClient),
 
 const { npmClient, registry } = cli.flags
 const outDir = resolve(cli.input[0] || '.')
-const generator = resolve(require.resolve(`@yelo/template-${cli.flags.template}/saofile.js`), '..')
-
+const generator = await fetch(cli.flags.template)
 const app = sao({ generator, outDir, npmClient, registry })
 
 await app.run().catch(sao.handleError)
