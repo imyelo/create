@@ -19,7 +19,7 @@ yarn create @yelo <app-name> --template <app|template> --npm-client <npm|yarn|pn
 ### Release
 
 ```bash
-yarn lerna publish
+yarn release
 ```
 
 ## License
