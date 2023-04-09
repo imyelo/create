@@ -1,0 +1,45 @@
+{
+  "name": "@yelo/create",
+  "version": "0.0.10",
+  "description": "🏗️ Scaffolds",
+  "type": "module",
+  "bin": "./lib/esm/bin.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc",
+    "clean": "rimraf ./lib",
+    "prebuild": "yarn clean",
+    "prepublishOnly": "yarn build"
+  },
+  "engines": {
+    "node": ">= 18"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imyelo/create.git",
+    "directory": "packages/@yelo/create"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/imyelo/create/issues"
+  },
+  "homepage": "https://github.com/imyelo/create#readme",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "rimraf": "^4.4.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.3"
+  },
+  "dependencies": {
+    "@yelo/template-template": "*",
+    "meow": "^11.0.0",
+    "sao": "^1.7.1"
+  }
+}

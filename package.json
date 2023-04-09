@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/@yelo/*"
+  ],
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "prettier": "@yelo/prettier-config",
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,md,html,css}": [
+      "prettier-eslint --write"
+    ]
+  },
+  "devDependencies": {
+    "@yelo/eslint-config": "^0.1.0",
+    "@yelo/prettier-config": "^0.0.1",
+    "@yelo/tsconfig": "^0.2.0",
+    "eslint": "^8.37.0",
+    "husky": "^8.0.3",
+    "lerna": "^6.6.1",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.7",
+    "prettier-eslint-cli": "^6.0.1",
+    "typescript": "^5.0.3",
+    "ultra-runner": "^3.10.5"
+  },
+  "version": "0.0.0",
+  "name": "@yelo/workspaces-create"
+}
