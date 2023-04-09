@@ -4,7 +4,8 @@
     "packages/@yelo/*"
   ],
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "lerna publish"
   },
   "husky": {
     "hooks": {
