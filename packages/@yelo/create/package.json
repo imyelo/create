@@ -1,6 +1,6 @@
 {
   "name": "@yelo/create",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "🏗️ Scaffolds",
   "type": "module",
   "bin": "./lib/esm/bin.js",
@@ -38,7 +38,7 @@
     "typescript": "^5.0.3"
   },
   "dependencies": {
-    "@yelo/template-template": "*",
+    "@yelo/template-template": "^0.0.1",
     "env-paths": "^3.0.0",
     "gitly": "^2.4.2",
     "meow": "^11.0.0",
