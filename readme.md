@@ -5,13 +5,13 @@
 ## Get Started
 
 ```bash
-yarn create @yelo my-project-name
+npm create @yelo my-project-name
 ```
 
 ## Usage
 
 ```bash
-yarn create @yelo <app-name> --template <app|template> --npm-client <npm|yarn|pnpm> --registry <registry_url>
+npm create @yelo <app-name> --template <app|template> --npm-client <npm|yarn|pnpm> --registry <registry_url>
 ```
 
 ## Development

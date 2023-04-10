@@ -7,6 +7,8 @@ import sao from 'sao'
 import { fetch } from './utils/fetch.js'
 import { printChoices } from './utils/print.js'
 
+const DEFAULT_NPM_CLIENT = 'yarn'
+
 const TEMPLATE_CHOICES = ['nodejs', 'template']
 const NPM_CLIENT_CHOICES = ['npm', 'yarn', 'pnpm']
 
@@ -17,7 +19,9 @@ const cli = meow(
 
   Options
     --template <template> Template (${printChoices(TEMPLATE_CHOICES)})
-    --npm-client <client> NPM client for packages installing (${printChoices(NPM_CLIENT_CHOICES)})})
+    --npm-client <client> NPM client for packages installing (${printChoices(
+      NPM_CLIENT_CHOICES
+    )}, default: ${DEFAULT_NPM_CLIENT})
     --registry <url> NPM registry
 `,
   {
@@ -25,10 +29,11 @@ const cli = meow(
     flags: {
       template: {
         type: 'string',
-        default: 'app',
+        default: 'nodejs',
       },
       npmClient: {
         type: 'string',
+        default: 'DEFAULT_NPM_CLIENT',
       },
       registry: {
         type: 'string',

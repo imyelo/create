@@ -3,7 +3,9 @@
   "version": "0.0.5",
   "description": "🏗️ Scaffolds",
   "type": "module",
-  "bin": "./lib/esm/bin.js",
+  "bin": {
+    "create-yelo": "./lib/esm/bin.js"
+  },
   "files": [
     "lib"
   ],
