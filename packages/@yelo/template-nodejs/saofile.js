@@ -19,6 +19,7 @@ module.exports = {
       type: 'move',
       patterns: {
         _husky: '.husky',
+        _vscode: '.vscode',
         _editorconfig: '.editorconfig',
         _eslintrc: '.eslintrc',
         _gitignore: '.gitignore',
