@@ -33,7 +33,7 @@ const cli = meow(
       },
       npmClient: {
         type: 'string',
-        default: 'DEFAULT_NPM_CLIENT',
+        default: DEFAULT_NPM_CLIENT,
       },
       registry: {
         type: 'string',
