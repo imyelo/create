@@ -1,4 +1,6 @@
-const pascalCase = require('pascalcase')
+const { camelCase, upperFirst } = require('lodash')
+
+const pascalCase = str => upperFirst(camelCase(str))
 
 module.exports = {
   prompts() {

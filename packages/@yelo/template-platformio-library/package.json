@@ -34,10 +34,11 @@
     ]
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.202",
     "ava": "^5.2.0",
     "sao": "^1.7.1"
   },
   "dependencies": {
-    "pascalcase": "^2.0.0"
+    "lodash": "^4.17.21"
   }
 }
