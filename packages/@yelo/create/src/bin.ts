@@ -5,6 +5,7 @@ import { resolve } from 'node:path'
 import meow from 'meow'
 import sao from 'sao'
 import { fetch } from './utils/fetch.js'
+import { installDependencies } from './utils/npm.js'
 import { printChoices } from './utils/print.js'
 
 const DEFAULT_NPM_CLIENT = 'yarn'
@@ -48,6 +49,9 @@ assert(!cli.flags.npmClient || NPM_CLIENT_CHOICES.includes(cli.flags.npmClient),
 const { npmClient, registry } = cli.flags
 const outDir = resolve(cli.input[0] || '.')
 const generator = await fetch(cli.flags.template)
+
+await installDependencies(cli.flags.npmClient, generator)
+
 const app = sao({ generator, outDir, npmClient, registry })
 
 await app.run().catch(sao.handleError)

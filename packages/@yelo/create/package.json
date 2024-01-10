@@ -35,12 +35,14 @@
   },
   "homepage": "https://github.com/imyelo/create#readme",
   "devDependencies": {
+    "@types/cross-spawn": "^6.0.6",
     "@types/node": "^18.15.11",
     "rimraf": "^4.4.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.3"
   },
   "dependencies": {
+    "cross-spawn": "^7.0.3",
     "env-paths": "^3.0.0",
     "gitly": "^2.4.2",
     "meow": "^11.0.0",
