@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@yelo/template-template-platformio-library",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "🛖 Template for template-platformio-library",
   "type": "commonjs",
   "files": [
