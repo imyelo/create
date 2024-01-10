@@ -38,7 +38,6 @@
     "sao": "^1.7.1"
   },
   "dependencies": {
-    "change-case": "^5.4.0",
     "pascalcase": "^2.0.0"
   }
 }
