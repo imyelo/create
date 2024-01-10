@@ -1,6 +1,6 @@
 #pragma once
 
-class<%= pascalName %> {
+class <%= pascalName %> {
 public:
 	<%= pascalName %>();
-}
+};
