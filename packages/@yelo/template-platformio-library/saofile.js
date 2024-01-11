@@ -30,6 +30,7 @@ module.exports = {
       {
         type: 'move',
         patterns: {
+          _vscode: '.vscode',
           '_clang-format': '.clang-format',
           _editorconfig: '.editorconfig',
           _gitignore: '.gitignore',
