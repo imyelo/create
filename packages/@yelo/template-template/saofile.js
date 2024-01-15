@@ -4,7 +4,7 @@ module.exports = {
       {
         name: 'name',
         message: 'Template name',
-        default: this.outFolder,
+        default: this.outFolder.replace(/$template-/, ''),
       },
     ]
   },
