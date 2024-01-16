@@ -10,7 +10,7 @@ import { printChoices } from './utils/print.js'
 
 const DEFAULT_NPM_CLIENT = 'yarn'
 
-const TEMPLATE_CHOICES = ['nodejs', 'template', 'platformio-library']
+const TEMPLATE_CHOICES = ['nodejs', 'template', 'platformio-library', 'platformio-app']
 const NPM_CLIENT_CHOICES = ['npm', 'yarn', 'pnpm']
 
 const cli = meow(
