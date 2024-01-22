@@ -17,3 +17,9 @@ cd /tmp/pio
 pio run -e ENV_NAME -t upload
 cd -
 ```
+
+### Run Tests
+
+```bash
+pio test -e ENV_NAME
+```
