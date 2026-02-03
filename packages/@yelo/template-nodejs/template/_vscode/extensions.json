@@ -1,8 +1,7 @@
 {
   "recommendations": [
-    "esbenp.prettier-vscode",
+    "biomejs.biome",
     "mikestead.dotenv",
-    "editorconfig.editorconfig",
-    "dbaeumer.vscode-eslint"
+    "editorconfig.editorconfig"
   ]
 }

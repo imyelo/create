@@ -1,7 +1,0 @@
-{
-  "extends": "@yelo/tsconfig",
-  "compilerOptions": {
-    "noEmit": true
-  },
-  "include": [".eslintrc", ".lintstagedrc.json", "tsconfig.json"]
-}

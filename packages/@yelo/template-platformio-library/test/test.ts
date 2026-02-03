@@ -1,5 +1,4 @@
 const { resolve } = require('node:path')
-const { fileURLToPath } = require('node:url')
 const test = require('ava')
 const sao = require('sao')
 

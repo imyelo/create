@@ -1,4 +1,4 @@
-const { resolve } = require('path')
+const { resolve } = require('node:path')
 
 module.exports = {
   prompts() {
@@ -21,8 +21,8 @@ module.exports = {
         _husky: '.husky',
         _vscode: '.vscode',
         _editorconfig: '.editorconfig',
-        _eslintrc: '.eslintrc',
         _gitignore: '.gitignore',
+        '_biome.json': 'biome.json',
         '_tsconfig.json': 'tsconfig.json',
       },
     },
