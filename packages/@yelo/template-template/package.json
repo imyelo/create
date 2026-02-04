@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@yelo/template-template",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "🛖 Template for template",
   "type": "commonjs",
   "files": [
