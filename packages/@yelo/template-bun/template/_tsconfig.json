@@ -1,5 +1,5 @@
 {
-  "extends": "@yelo/tsconfig",
+  "extends": "@yelo/tsconfig/bun",
   "compilerOptions": {
     "noEmit": true
   },
