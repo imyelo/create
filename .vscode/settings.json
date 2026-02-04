@@ -19,11 +19,11 @@
   "[json]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
+  "[jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
   "[markdown]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  }
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
