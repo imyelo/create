@@ -23,6 +23,7 @@ module.exports = {
         _editorconfig: '.editorconfig',
         _gitignore: '.gitignore',
         '_biome.json': 'biome.json',
+        '_mise.toml': '.mise.toml',
         '_tsconfig.json': 'tsconfig.json',
       },
     },

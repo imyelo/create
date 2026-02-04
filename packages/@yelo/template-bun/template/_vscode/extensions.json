@@ -2,6 +2,8 @@
   "recommendations": [
     "biomejs.biome",
     "mikestead.dotenv",
-    "editorconfig.editorconfig"
+    "editorconfig.editorconfig",
+    "tamasfe.even-better-toml",
+    "hverlin.mise-vscode"
   ]
 }
