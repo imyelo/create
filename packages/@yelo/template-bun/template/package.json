@@ -1,0 +1,60 @@
+{
+  "name": "<%= name %>",
+  "version": "0.0.0",
+  "author": "yelo <zhihuzeye@gmail.com>",
+  "repository": {
+    "url": "imyelo/<%= name %>",
+    "type": "git"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.14",
+    "@types/bun": "^1.3.8",
+    "@yelo/biome-config": "^0.1.3",
+    "@yelo/tsconfig": "^0.5.4",
+    "husky": "^9.0.0",
+    "np": "^10.0.0",
+    "rimraf": "^6.0.0",
+    "typescript": "^5.0.4"
+  },
+  "exports": {
+    ".": {
+      "types": "./lib/types/index.d.ts",
+      "default": "./lib/esm/index.js"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/imyelo/<%= name %>/issues"
+  },
+  "bun": {
+    "test": {
+      "setup": ["test/setup.ts"],
+      "coverage": true
+    }
+  },
+  "description": "",
+  "engines": {
+    "bun": ">=1.2"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/imyelo/<%= name %>#readme",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "dev": "bun run --hot ./src/index.ts",
+    "clean": "rimraf ./lib",
+    "prebuild": "bun run clean",
+    "build": "tsc -p ./tsconfig.esm.json",
+    "test": "bun test",
+    "lint": "biome check .",
+    "lint:fix": "biome check . --fix",
+    "format": "biome format . --write",
+    "prepare": "husky",
+    "release": "np"
+  },
+  "type": "module",
+  "types": "./lib/types/index.js"
+}
