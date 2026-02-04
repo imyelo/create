@@ -5,8 +5,8 @@
       "name": "@yelo/workspaces-create",
       "devDependencies": {
         "@biomejs/biome": "^2.3.14",
-        "@yelo/biome-config": "^0.1.3",
-        "@yelo/tsconfig": "^0.5.4",
+        "@yelo/biome-config": "^0.1.4",
+        "@yelo/tsconfig": "^0.6.0",
         "husky": "^9.1.7",
         "lerna": "^9.0.3",
         "typescript": "^5.0.3",
@@ -15,7 +15,7 @@
     },
     "packages/@yelo/create": {
       "name": "@yelo/create",
-      "version": "0.1.5",
+      "version": "0.1.6",
       "bin": {
         "create-yelo": "./lib/esm/bin.js",
       },
@@ -37,7 +37,7 @@
     },
     "packages/@yelo/template-bun": {
       "name": "@yelo/template-bun",
-      "version": "0.0.0",
+      "version": "0.1.0",
       "devDependencies": {
         "ava": "^5.2.0",
         "sao": "^1.7.1",
@@ -45,7 +45,7 @@
     },
     "packages/@yelo/template-nodejs": {
       "name": "@yelo/template-nodejs",
-      "version": "0.0.3",
+      "version": "0.1.0",
       "devDependencies": {
         "ava": "^5.2.0",
         "sao": "^1.7.1",
@@ -53,7 +53,7 @@
     },
     "packages/@yelo/template-platformio-app": {
       "name": "@yelo/template-platformio-app",
-      "version": "0.0.1",
+      "version": "0.0.2",
       "dependencies": {
         "lodash": "^4.17.21",
       },
@@ -64,7 +64,7 @@
     },
     "packages/@yelo/template-platformio-library": {
       "name": "@yelo/template-template-platformio-library",
-      "version": "0.0.3",
+      "version": "0.0.4",
       "dependencies": {
         "lodash": "^4.17.21",
       },
@@ -76,7 +76,7 @@
     },
     "packages/@yelo/template-template": {
       "name": "@yelo/template-template",
-      "version": "0.0.3",
+      "version": "0.0.4",
       "devDependencies": {
         "ava": "^5.2.0",
         "sao": "^1.7.1",
@@ -304,7 +304,7 @@
 
     "@yarnpkg/parsers": ["@yarnpkg/parsers@3.0.2", "", { "dependencies": { "js-yaml": "^3.10.0", "tslib": "^2.4.0" } }, "sha512-/HcYgtUSiJiot/XWGLOlGxPYUG65+/31V8oqk17vZLW1xlCoR4PampyePljOxY2n8/3jz9+tIFzICsyGujJZoA=="],
 
-    "@yelo/biome-config": ["@yelo/biome-config@0.1.3", "", {}, "sha512-8deil8pQi2DAYqfF2Sv0e/nF7pLl+95K2Uyp9oQsAhEvEC7t/BcaDyIju/WFKWZPZ2qc/Po7j9nE700L6O+CVQ=="],
+    "@yelo/biome-config": ["@yelo/biome-config@0.1.4", "", {}, "sha512-m+aGy4tXCcdvVVv/pYZ55eF8ioel5+SFJ/oJDaC2Mct1qqNlJRig7l+TXEg83vBYQjVIEKfTwWT6SjVMSOq0Kg=="],
 
     "@yelo/create": ["@yelo/create@workspace:packages/@yelo/create"],
 
@@ -318,7 +318,7 @@
 
     "@yelo/template-template-platformio-library": ["@yelo/template-template-platformio-library@workspace:packages/@yelo/template-platformio-library"],
 
-    "@yelo/tsconfig": ["@yelo/tsconfig@0.5.4", "", { "peerDependencies": { "typescript": ">4" } }, "sha512-W7/8DHhug+5/nC0Ydp9aJx+/e0BkArJLSgLh8hcwZ2rRxjmCAAEPmOmqzokrMzxWP+FPC0tEhML8DiT0ycMUMw=="],
+    "@yelo/tsconfig": ["@yelo/tsconfig@0.6.0", "", { "peerDependencies": { "typescript": ">4" } }, "sha512-tQupnQK1cOudXiXM6SBSjCHE194BPBq4oqlfH3D1Bf0EayZdnz0eZqLc04Pdhdoy18I3xuC0GNzClJs/wLfxxA=="],
 
     "@zkochan/js-yaml": ["@zkochan/js-yaml@0.0.7", "", { "dependencies": { "argparse": "^2.0.1" }, "bin": { "js-yaml": "bin/js-yaml.js" } }, "sha512-nrUSn7hzt7J6JWgWGz78ZYI8wj+gdIJdk0Ynjpp8l+trkn58Uqsf6RYrYkEK+3X18EX+TNdtJI0WxAtc+L84SQ=="],
 

@@ -15,8 +15,5 @@
       "!packages/@yelo/template-*/test/snapshots/**/*"
     ],
     "ignoreUnknown": true
-  },
-  "formatter": {
-    "useEditorconfig": true
   }
 }
