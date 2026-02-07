@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@yelo/template-bun",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "🛖 Template for bun",
   "type": "commonjs",
   "files": [
