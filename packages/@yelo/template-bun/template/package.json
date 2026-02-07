@@ -48,6 +48,7 @@
     "clean": "rimraf ./lib",
     "prebuild": "bun run clean",
     "build": "tsc -p ./tsconfig.esm.json",
+    "typecheck": "tsc --noEmit",
     "test": "bun test",
     "lint": "biome check .",
     "lint:fix": "biome check . --fix",

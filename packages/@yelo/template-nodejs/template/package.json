@@ -18,6 +18,7 @@
     "clean": "rimraf ./lib",
     "prebuild": "npm run clean",
     "build": "tsc -p ./tsconfig.esm.json",
+    "typecheck": "tsc --noEmit",
     "test": "ava",
     "lint": "biome check .",
     "lint:fix": "biome check . --fix",
